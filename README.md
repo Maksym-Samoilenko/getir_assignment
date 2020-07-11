@@ -11,12 +11,15 @@ To  deploy application locally:
 Also application is deployed on heroku: https://getir-assignment-maksym.herokuapp.com/
 
 Example of json query to https://getir-assignment-maksym.herokuapp.com/ :
+
 ` {"startDate": "2016-01-26", 
       "endDate": "2018-02-02", 
       "minCount": 23, 
       "maxCount": 1000
  }`
+ 
  Answer
+ 
  `{
     "code": 0,
     "msg": "Success",
