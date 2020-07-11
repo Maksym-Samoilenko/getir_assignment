@@ -1,5 +1,6 @@
 /**
- * @fileoverview Module is responsible for checking error in request and returns validation errors with 422 code and msg
+ * @fileoverview validateResult is responsible for checking error in request and
+ *  returns validation errors with 422 code and appropriate msg
  * @author maxsam125@google.com (Maksym Samoilenko)
  */
 const { validationResult } = require('express-validator');

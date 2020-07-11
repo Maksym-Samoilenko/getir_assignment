@@ -1,5 +1,5 @@
 /**
- * @fileoverview Module fetch record count query result from mongodb
+ * @fileoverview Module fetch record counts query result from mongodb
  * @author maxsam125@google.com (Maksym Samoilenko)
  */
 const mongoose = require('mongoose');
