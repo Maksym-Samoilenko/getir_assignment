@@ -4,11 +4,16 @@
  */
 const mongoose = require('mongoose');
 module.exports = {
+/** Get recordcount from mongo db
+    @param req - request with params startDate, endDate, minCount, maxCount
+    @param res - response with result or error
+*/
     recordCount: async (req, res) => {
-        const startDate = req.body.startDate;
-        const endDate = req.body.endDate;
-        const minCount = req.body.minCount;
-        const maxCount = req.body.maxCount;
+        const reqBody = req.body;
+        const startDate = reqBody.startDate;
+        const endDate = reqBody.endDate;
+        const minCount = reqBody.minCount;
+        const maxCount = reqBody.maxCount;
         try {
             const result = await mongoose.model("Record").aggregate([
                 { $match: { createdAt: { "$gte": new Date(startDate), "$lte": new Date(endDate) } } },
