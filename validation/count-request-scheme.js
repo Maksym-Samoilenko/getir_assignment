@@ -1,5 +1,7 @@
 /**
- * @fileoverview Module with validator:() function is responsible 
+ * @fileoverview
+ * @module 
+ * Module validation is responsible 
  * for checking request by using 
  * express-validator scheme functionality
  * @author maxsam125@google.com (Maksym Samoilenko)
@@ -8,6 +10,7 @@ const { isFirstBeforeSecondDate, isIntegerGtEZero, isFirstLtESecondNumber } = re
 const { dateIsNotIso8601, notPositiveInteger, maxLtMin, startDateGtEEndDate } = require('./constants')
 module.exports =
 {
+    /** @function validator return scheme to validate request*/
     validator: () => {
         return {
             startDate: {
