@@ -5,7 +5,7 @@
 const app = require('.././server');
 const supertest = require('supertest');
 const request = supertest(app);
-describe('Integration validation test', function () {
+describe('Integration validation tests', function () {
   it('post endpoint', async done => {
     const response = await request.post('/')
       .send({
